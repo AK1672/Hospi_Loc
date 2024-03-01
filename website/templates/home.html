@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+  %}
+  <div class="row" style="height: 80vh;">
+    <div class="col-5">
+  <h2>Navigate Your Health Journey: Find Your Ideal Hospital with Ease</h2>
+  {% if user.is_authenticated %}
+  {% else %}
+  <h2>Signup to start your journey with us</h2>
+  <h2>Login Find Your Ideal Hospital</h2>
+  {% endif %}
+</div>
+  <div class="col-7" >
+    <div class="image-container">
+  <img src="../static/171631860-56aae7f53df78cf772b4a4cb.jpg" alt="We are for you" id="pic" style="height: 90vh; width: 110vh;">
+</div>
+</div>
+  {% endblock %}
+  
